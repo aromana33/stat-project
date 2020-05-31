@@ -1,3 +1,5 @@
+> *Если бы не было статистики, мы бы даже не подозревали о том, как хорошо мы работаем.* \
+*«Служебный роман»*
 
 
 # t-критерий Уэлча
@@ -54,5 +56,6 @@ plt.legend()
 plt.xlabel('p-value')
 plt.ylabel('Number of samples total')
 plt.title('Relation between p-value and number of tests')
-plt.savefig('relation.png')
+plt.show()
 ```
+![](/Users/aleksandraromanenko/Downloads/relation.png)
