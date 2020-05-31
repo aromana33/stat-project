@@ -1,3 +1,5 @@
+
+
 # t-критерий Уэлча
 
 В рамках этого проекта мы подготовили:
@@ -11,7 +13,7 @@
  * Выводение списков p-value для различного количества сэмплов при заданных параметрах
  * Построение графиков взаимозависимости p-value от количества тестов
  
-```{python}
+```python
 def compare_tests(n_1, n_2, mu_1, mu_2, std_1, std_2):
     """
     Выводит сравнение результатов тестов
@@ -23,7 +25,7 @@ def compare_tests(n_1, n_2, mu_1, mu_2, std_1, std_2):
     return [stats.ttest_ind(X_1, X_2, equal_var=False), stats.ttest_ind(X_1, X_2)]
 ```
 
-```{python}
+```python
 def p_values(n_1, n_2, mu_1, mu_2, std_1, std_2):
     """
     Выводит списки p-value для различного количества сэмплов при заданных параметрах
@@ -42,7 +44,7 @@ def p_values(n_1, n_2, mu_1, mu_2, std_1, std_2):
     return p_values_welch, p_values_student, total_samples
 ```
 
-```{python}
+```python
 np.random.seed(1337)
 p_values_welch, p_values_student,total_samples = p_values(10, 20, 22, 22, 1, 5)
 plt.figure(figsize=(13, 8))
